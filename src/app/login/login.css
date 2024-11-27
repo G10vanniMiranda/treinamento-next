@@ -1,0 +1,104 @@
+header{
+    background-color: blueviolet;
+    
+    /* padding-left: 50px;
+    padding-right: 50px; */
+
+    /* padding: 20px 200px; */
+
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+
+    padding: 50px 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.btn-voltar{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: red;
+
+    opacity: .6;
+    transition: .3s;
+}
+
+.btn-voltar:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card{
+    width: 40%;
+    height: 260px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: black;
+
+    gap: 10px;
+    display: flex;    
+    flex-direction: column;
+}
+
+.text-login{
+    font-weight: 900;
+}
+
+.dados{
+    
+}
+
+.dados h2{
+    font-family: 'Sora';
+    font-size: 15px;
+}
+
+.dados input{
+    width: 100%;
+    margin: 10 px 0;
+    padding: 2px;
+    border: 2px solid #3951bb;
+    border-radius: 10px;
+    color: aliceblue;
+    outline: none; /* Remove o contorno padrão */
+    font-size: 14px;
+    transition: borde-color 0.3s ease;
+    background-color: transparent;
+}
+.dados input:hover{
+    border-color: aqua;
+    box-shadow: 0 0 5px;
+}
+
+.text-login{
+    text-align: center;
+}
+
+.text-esqueci{
+    font-size: 10px;
+    padding-bottom: 12px;
+    padding-left: 250px;
+}
+.text-esqueci:hover{
+    cursor: pointer;
+    color: rgb(128, 78, 78);
+}
+
+.btn-entrar{
+    border: 2px none;
+    border-radius: 10px;
+    background-color: rgb(44, 124, 230);
+    padding: 2px;
+    font-size: medium;
+    font-family: 'Sora';
+    font-weight: 900;
+    
+    display: flex;
+    justify-content: center;
+
+    transition: .3s;
+}
+
+.btn-entrar:hover{
+    background-color: rgb(5, 187, 187);
+}
