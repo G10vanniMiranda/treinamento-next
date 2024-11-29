@@ -1,3 +1,6 @@
+.container-login{
+    color: white;
+}
 header{
     background-color: blueviolet;
     
@@ -38,6 +41,8 @@ header{
     gap: 10px;
     display: flex;    
     flex-direction: column;
+
+    position: relative;
 }
 
 .text-login{
@@ -45,7 +50,9 @@ header{
 }
 
 .dados{
-    
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
 .dados h2{
@@ -56,8 +63,7 @@ header{
 .dados input{
     width: 100%;
     margin: 10 px 0;
-    padding: 2px;
-    border: 2px solid #3951bb;
+    padding: 10px;
     border-radius: 10px;
     color: aliceblue;
     outline: none; /* Remove o contorno padrão */
@@ -65,19 +71,25 @@ header{
     transition: borde-color 0.3s ease;
     background-color: transparent;
 }
-.dados input:hover{
-    border-color: aqua;
-    box-shadow: 0 0 5px;
+input{   
+    border: 4px solid #3951bb;
+    /*
+    border-bottom: 5px solid #3951bb !important;
+    */
 }
 
 .text-login{
     text-align: center;
 }
-
-.text-esqueci{
-    font-size: 10px;
-    padding-bottom: 12px;
-    padding-left: 250px;
+label{
+    margin-left: 5cqbpx;
+}
+.text-esqueci {
+    margin-top: -10px;
+    text-align: right;
+    margin-right: 4px;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 .text-esqueci:hover{
     cursor: pointer;
@@ -87,11 +99,13 @@ header{
 .btn-entrar{
     border: 2px none;
     border-radius: 10px;
-    background-color: rgb(44, 124, 230);
-    padding: 2px;
-    font-size: medium;
+    padding: 7px;
     font-family: 'Sora';
     font-weight: 900;
+    color: white;
+    font-size: medium;
+    background-color: rgb(44, 124, 230);
+    letter-spacing: 2px; /* Espaçamento entre as letras */
     
     display: flex;
     justify-content: center;
@@ -101,4 +115,50 @@ header{
 
 .btn-entrar:hover{
     background-color: rgb(5, 187, 187);
+}
+
+.form-esqueci{
+    width: 400px;
+    height: 350px;
+    color: #000;
+    background-color: white;
+
+    position: absolute;
+    top: 150px;
+    left: 280px;
+    z-index: 2;
+
+    display: none;
+
+    
+}
+.form-esqueci .btn-fechar{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: -12;
+    top: -10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-esqueci .row{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form-esqueci .row input{
+  padding: 10px;    
+}
+
+.btn-alterar{
+    background-color: blue;
+}
+
+.mostrar{
+    display: block;
 }

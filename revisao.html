@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+</head>
+<body>
+    <header>
+        <img src="./public/logo.png" alt="logo do site">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produto</a>
+            <a href="#">Serviço</a>
+            <a href="#">Contato</a>
+        </nav>
+        <button>Painel</button>
+    </header>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            font-family: "Sora", sans-serif;
+        }
+
+        header{
+            width: 100vw;
+            height: 150px;            
+
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            background-color: #1d1d1d;
+        }
+
+        header img{
+            width: 300px;
+            height: 300px;
+        }
+
+        header nav{
+            gap: 50px;
+            display: flex;
+        }
+
+        header nav a{
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+
+            transition: .6s;
+
+            letter-spacing: 2px;
+            text-decoration: none;
+            
+        }
+
+        header nav a:hover{
+            padding: 10px 20px;
+            background-color: black;
+            transform: scale(1.3);
+        }
+
+        header button{
+            padding: 15px 25px;
+
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            color: white;
+            background-color: black;
+        }
+
+        @media screen and (max-width: 1920px) {
+            header{
+                background-color: red;
+            }
+            header img{
+
+            }
+            header nav a{
+
+            }
+            header button{
+
+            }
+        }
+        @media screen and (max-width: 1300px) {
+            header{
+                background-color: blueviolet;
+            }
+            header nav{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            header{
+                background-color: aqua;
+            }
+            header img{
+                width: 200px;
+                height: 200px;
+            }
+            header button{
+                display: none;
+            }
+        }
+    </style>
+</body>
+</html>
